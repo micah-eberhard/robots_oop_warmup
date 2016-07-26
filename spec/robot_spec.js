@@ -1,3 +1,5 @@
+'use strict';
+
 var Robot = require('../robot');
 
 describe('Robot', function() {
@@ -40,7 +42,7 @@ describe('Robot', function() {
   });
 
   it("can only make one move per battery charge, at 0 it will no longer move.", function () {
-    robot = new Robot(3);
+    var robot = new Robot(3);
     expect(robot.battery()).toEqual(3);
 
     robot.moveLeft();
