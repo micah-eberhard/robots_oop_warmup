@@ -31,7 +31,7 @@ describe('Robot', function() {
   });
 
   it("can record their history", function () {
-    robot = new Robot(8);
+    var robot = new Robot(8);
     expect(robot.history()).toEqual([]);
 
     robot.moveLeft();
